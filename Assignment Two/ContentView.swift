@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  Assignment Two
 //
-//  Created by Santiago Gutierrez on 12/26/20.
-//
 
 import SwiftUI
 
