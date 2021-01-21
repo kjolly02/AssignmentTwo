@@ -22,9 +22,9 @@ extension CKTaskCoordinator: ORKTaskViewControllerDelegate {
                      try CKSendJSON(json)
                      
                      // (3) if we have any files, send those using Google Storage
-                     /*if let associatedFiles = taskViewController.outputDirectory {
+                     if let associatedFiles = taskViewController.outputDirectory {
                          try CKSendFiles(associatedFiles, result: json)
-                     }*/
+                     }
                  }
              } catch {
                  print(error.localizedDescription)

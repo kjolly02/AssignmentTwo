@@ -12,7 +12,7 @@ import ResearchKit
  This file contains some sample `ResearchKit` tasks
  that you can modify and use throughout your project!
 */
-struct TaskSamples {
+struct RKTaskSamples {
     
     /**
      Sample task template!
