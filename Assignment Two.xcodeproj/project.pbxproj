@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		63A3CE7CD4FC0CCD0333F867 /* Pods_Assignment_Two.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DE9A4430C3A45320910A5E /* Pods_Assignment_Two.framework */; };
-		8E0A956125B66A530025461E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A956025B66A530025461E /* GoogleService-Info.plist */; };
 		8E0A956625B6767B0025461E /* CKTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A956525B6767B0025461E /* CKTaskViewController.swift */; };
 		8E0A956925B677950025461E /* RKTaskSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A956825B677950025461E /* RKTaskSamples.swift */; };
 		8E35408925B8FE3A007B7029 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35408825B8FE3A007B7029 /* SurveyView.swift */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		4483BDF88A5E2878F34C059F /* Pods-Assignment Two.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment Two.release.xcconfig"; path = "Target Support Files/Pods-Assignment Two/Pods-Assignment Two.release.xcconfig"; sourceTree = "<group>"; };
-		8E0A956025B66A530025461E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E0A956525B6767B0025461E /* CKTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTaskViewController.swift; sourceTree = "<group>"; };
 		8E0A956825B677950025461E /* RKTaskSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKTaskSamples.swift; sourceTree = "<group>"; };
 		8E35408825B8FE3A007B7029 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				8E3540A325B9158A007B7029 /* ResearchKit */,
 				8EF8F77E2597C7E1000850BF /* Assets.xcassets */,
 				8EF8F7832597C7E1000850BF /* Info.plist */,
-				8E0A956025B66A530025461E /* GoogleService-Info.plist */,
 				8E35409325B90E7F007B7029 /* Assignment Two-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
@@ -218,7 +215,6 @@
 			files = (
 				8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */,
 				8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */,
-				8E0A956125B66A530025461E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
