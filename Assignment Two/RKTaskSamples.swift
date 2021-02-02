@@ -207,4 +207,38 @@ struct RKTaskSamples {
         let task = ORKNavigableOrderedTask(identifier: "SurveyTask-Assessment", steps: steps)
         return task
     }()
+    
+    static let gaitAndBalanceTask: ORKOrderedTask = {
+        var steps = [ORKStep]()
+        
+        // Gait and Balance Task
+        let gaitAndBalanceTask = ORKOrderedTask.shortWalk(withIdentifier: "GaitAndBalance", intendedUseDescription: "This task will require you to walk a short distance for a fixed number for steps.", numberOfStepsPerLeg: 20, restDuration: 20, options: ORKPredefinedTaskOption())
+        steps += gaitAndBalanceTask.steps
+ 
+        // Summary step
+        let summaryStep = ORKCompletionStep(identifier: "ActiveSummaryStep")
+        summaryStep.title = "Thank you."
+        summaryStep.text = "All done!"
+        steps += [summaryStep]
+
+        let task = ORKNavigableOrderedTask(identifier: "SurveyActiveTasks-Assessment", steps: steps)
+        return task
+    }()
+    
+    static let timedWalkTask: ORKOrderedTask = {
+        var steps = [ORKStep]()
+ 
+        // Timed Walk Task
+        let walkTask = ORKOrderedTask.timedWalk(withIdentifier: "TimedWalk", intendedUseDescription: "This task will require you to walk a short distance for a fixed amount of time.", distanceInMeters: 100.0, timeLimit: 180.0, turnAroundTimeLimit: 180.0, includeAssistiveDeviceForm: true, options: ORKPredefinedTaskOption())
+        steps += walkTask.steps
+ 
+        // Summary step
+        let summaryStep = ORKCompletionStep(identifier: "ActiveSummaryStep")
+        summaryStep.title = "Thank you."
+        summaryStep.text = "All done!"
+        steps += [summaryStep]
+
+        let task = ORKNavigableOrderedTask(identifier: "SurveyActiveTasks-Assessment", steps: steps)
+        return task
+    }()
 }

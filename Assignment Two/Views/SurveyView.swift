@@ -41,6 +41,20 @@ struct SurveyView: View {
                 RoundedTextView("Start SF-12 Survey", backgroundColor: .red)
             }
             
+            Button(action: {
+                
+                surveyOptional = RKTaskSamples.gaitAndBalanceTask
+            }) {
+                RoundedTextView("Start Gait and Balance Task", backgroundColor: .red)
+            }
+            
+            Button(action: {
+                
+                surveyOptional = RKTaskSamples.timedWalkTask
+            }) {
+                RoundedTextView("Start Timed Walk Task", backgroundColor: .red)
+            }
+
             Spacer()
         }
         .frame(maxWidth: .infinity)
