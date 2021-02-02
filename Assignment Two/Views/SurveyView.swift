@@ -36,11 +36,16 @@ struct SurveyView: View {
                     The task must conform to the ORKOrderedTask class.
                  */
                 
-                surveyOptional = RKTaskSamples.sampleSurveyTask
+                // surveyOptional = /* my ORKOrderedTask */
+                surveyOptional = RKTaskSamples.sf12SurveyTask
             }) {
                 RoundedTextView("Start SF-12 Survey", backgroundColor: .red)
             }
-            
+            Button(action: {
+                surveyOptional = RKTaskSamples.onboardingSurveyTask
+            }) {
+                RoundedTextView("Start Onboarding Survey", backgroundColor: .red)
+            }
             Spacer()
         }
         .frame(maxWidth: .infinity)
