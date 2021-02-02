@@ -37,10 +37,15 @@ struct SurveyView: View {
                  */
                 
                 // surveyOptional = /* my ORKOrderedTask */
+                surveyOptional = RKTaskSamples.onboardingSurveyTask
             }) {
                 RoundedTextView("Start Survey", backgroundColor: .red)
             }
-            
+            Button(action: {
+                surveyOptional = RKTaskSamples.sampleTappingTask
+            }) {
+                RoundedTextView("Start Tapping!", backgroundColor: .red)
+            }
             Spacer()
         }
         .frame(maxWidth: .infinity)
