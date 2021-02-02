@@ -64,6 +64,7 @@
 				8E3540A425B91593007B7029 /* Firebase */,
 				8E3540A325B9158A007B7029 /* ResearchKit */,
 				8EF8F77E2597C7E1000850BF /* Assets.xcassets */,
+				B6D8F06825C6B4B700FF31DB /* GoogleService-Info.plist */,
 				8EF8F7832597C7E1000850BF /* Info.plist */,
 				8E35409325B90E7F007B7029 /* Assignment Two-Bridging-Header.h */,
 			);
@@ -219,6 +220,7 @@
 				8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */,
 				DA9EF2B325C0F59300FEFD4F /* GoogleService-Info.plist in Resources */,
 				8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */,
+				B6D8F06925C6B4B700FF31DB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +414,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment Two/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = MQ8Q3582TX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Assignment Two/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -438,7 +440,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment Two/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = MQ8Q3582TX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Assignment Two/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
