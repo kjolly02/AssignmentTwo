@@ -20,7 +20,7 @@
 		8EF8F77D2597C7DE000850BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8F77C2597C7DE000850BF /* ContentView.swift */; };
 		8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F77E2597C7E1000850BF /* Assets.xcassets */; };
 		8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */; };
-		B6D8F06925C6B4B700FF31DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D8F06825C6B4B700FF31DB /* GoogleService-Info.plist */; };
+		DA9EF2B325C0F59300FEFD4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF2B225C0F59200FEFD4F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +127,7 @@
 				8EF8F77A2597C7DE000850BF /* Assignment_TwoApp.swift */,
 				8E35409825B90F1B007B7029 /* RKTaskDelegate.swift */,
 				8E0A956825B677950025461E /* RKTaskSamples.swift */,
+				DA9EF2B225C0F59200FEFD4F /* GoogleService-Info.plist */,
 			);
 			path = "Assignment Two";
 			sourceTree = "<group>";
@@ -217,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */,
+				DA9EF2B325C0F59300FEFD4F /* GoogleService-Info.plist in Resources */,
 				8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */,
 				B6D8F06925C6B4B700FF31DB /* GoogleService-Info.plist in Resources */,
 			);
