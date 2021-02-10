@@ -340,7 +340,7 @@ struct RKTaskSamples {
         var steps = [ORKStep]()
         
         // Gait and Balance Task
-        let gaitAndBalanceTask = ORKOrderedTask.shortWalk(withIdentifier: "GaitAndBalance", intendedUseDescription: "This task will require you to walk a short distance for a fixed number for steps.", numberOfStepsPerLeg: 20, restDuration: 20, options: ORKPredefinedTaskOption())
+        let gaitAndBalanceTask = ORKOrderedTask.shortWalk(withIdentifier: "GaitAndBalance", intendedUseDescription: "This task will require you to walk a short distance for a fixed number of steps.", numberOfStepsPerLeg: 20, restDuration: 20, options: ORKPredefinedTaskOption())
         steps += gaitAndBalanceTask.steps
  
         // Summary step
@@ -359,6 +359,23 @@ struct RKTaskSamples {
         // Timed Walk Task
         let walkTask = ORKOrderedTask.timedWalk(withIdentifier: "TimedWalk", intendedUseDescription: "This task will require you to walk a short distance for a fixed amount of time.", distanceInMeters: 100.0, timeLimit: 180.0, turnAroundTimeLimit: 180.0, includeAssistiveDeviceForm: true, options: ORKPredefinedTaskOption())
         steps += walkTask.steps
+ 
+        // Summary step
+        let summaryStep = ORKCompletionStep(identifier: "ActiveSummaryStep")
+        summaryStep.title = "Thank you."
+        summaryStep.text = "All done!"
+        steps += [summaryStep]
+
+        let task = ORKNavigableOrderedTask(identifier: "SurveyActiveTasks-Assessment", steps: steps)
+        return task
+    }()
+    
+    static let tremorTask: ORKOrderedTask = {
+        var steps = [ORKStep]()
+ 
+        // Tremor Task
+        let tremorTask = ORKOrderedTask.tremorTest(withIdentifier: "TremorTask", intendedUseDescription: "Please complete this task", activeStepDuration: 10, activeTaskOptions: ORKTremorActiveTaskOption(), handOptions: [.both], options: ORKPredefinedTaskOption())
+        steps += tremorTask.steps
  
         // Summary step
         let summaryStep = ORKCompletionStep(identifier: "ActiveSummaryStep")

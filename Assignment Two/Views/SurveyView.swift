@@ -55,6 +55,14 @@ struct SurveyView: View {
             }) {
                 RoundedTextView("Start Timed Walk Task", backgroundColor: .red)
             }
+            
+            Button(action: {
+                
+                surveyOptional = RKTaskSamples.tremorTask
+            }) {
+                RoundedTextView("Start Tremor Task", backgroundColor: .red)
+            }
+            Spacer()
 
             Button(action: {
                 surveyOptional = RKTaskSamples.onboardingSurveyTask
@@ -62,6 +70,7 @@ struct SurveyView: View {
                 RoundedTextView("Start Onboarding Survey", backgroundColor: .red)
             }
             Spacer()
+            
         }
         .frame(maxWidth: .infinity)
         .background(color)
